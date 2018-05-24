@@ -10,6 +10,7 @@ Nuxt.js starter kit
   - sitemap
 - Sass(.scss) file type support
   - atomic design folder tree
+  - Eric Meyer’s CSS Reset
 - ESLint support
   - include eslint/standard
   - include airbnb-base

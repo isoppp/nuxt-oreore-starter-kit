@@ -1,7 +1,21 @@
 // vendor
+@import "vendor/__import";
+
+// variables
+@import "variables/__import";
+
+// mixins
+@import "mixins/__import";
+
 // base
+@import "base/__import";
+
 // components
+@import "components/atoms/__import";
+@import "components/molecules/__import";
+@import "components/organisms/__import";
+@import "components/templates/__import";
+@import "components/upages/__import";
+
 // helper
-.hoge {
-  transform: scale(1);
-}
+@import "helper/__import";

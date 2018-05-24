@@ -3,7 +3,7 @@ module.exports = {
     { src: '~assets/scss/main.scss', lang: 'sass' },
   ],
   head: {
-    title: 'isoppp.com',
+    title: 'Nuxt.js oreore starter kit',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -16,22 +16,22 @@ module.exports = {
   },
   loading: { color: '#aaa' },
   build: {
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/,
-        })
-      }
-
-    },
+    // extend (config, { isDev, isClient }) {
+    //   if (isDev && isClient) {
+    //     config.module.rules.push({
+    //       enforce: 'pre',
+    //       test: /\.(js|vue)$/,
+    //       loader: 'eslint-loader',
+    //       exclude: /(node_modules)/,
+    //     })
+    //   }
+    //
+    // },
   },
   modules: [
     ['@nuxtjs/pwa'],
     ['@nuxtjs/sitemap'],
-    // ['nuxt-sass-resources-loader', ['SOME.scss']],
+    ['nuxt-sass-resources-loader', ['assets/scss/variables/__import.scss', 'assets/scss/mixins/__import.scss']],
     // ['@nuxtjs/google-tag-manager', { id: 'GTM-XXXXXX' }],
   ],
   manifest: {

@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+  color: $color-text-base;
+  font-family: $font-family-base;
+  -webkit-font-smoothing: antialiased;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a:link,
+a:visited {
+  color: $color-text-link;
+  text-decoration: none;
+
+  &:hover {
+    opacity: .8;
+    transition: opacity .2s;
+  }
+}
+
+img {
+  max-width: 100%;
+}
