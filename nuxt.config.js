@@ -7,8 +7,8 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'DESCRIPTION_HERE', },
-      { hid: 'og:image', property: 'og:image', content: 'YOUR_DOMAIN/og.png', },
+      { hid: 'description', name: 'description', content: 'DESCRIPTION_HERE' },
+      { hid: 'og:image', property: 'og:image', content: 'YOUR_DOMAIN/og.png' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -22,10 +22,11 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
         })
       }
-    }
+
+    },
   },
   modules: [
     ['@nuxtjs/pwa'],

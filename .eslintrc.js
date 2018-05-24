@@ -5,17 +5,30 @@ module.exports = {
     node: true
   },
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
   },
   extends: [
-    // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
-    // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
-    'plugin:vue/essential'
+    'standard',
+    'airbnb-base',
+    'plugin:vue/recommended',
   ],
-  // required to lint *.vue files
   plugins: [
-    'vue'
+    'vue',
   ],
-  // add your custom rules here
-  rules: {}
+  rules: {
+    'max-len': 0, // bad template error
+    'semi': ['error', 'never'],
+    'indent': 0, // for vue/script-indent
+    "space-before-function-paren": ["error", { "anonymous": "always", "named": "always", "asyncArrow": "always" }],
+    'import/no-unresolved': 0,
+    'vue/html-self-closing': 0,
+    'vue/max-attributes-per-line': ['error', {
+      'singleline': 6,
+      'multiline': {
+        'max': 1,
+        'allowFirstLine': false,
+      },
+    }],
+    'vue/script-indent': ["error", 2, { "baseIndent": 1 }],
+  }
 }

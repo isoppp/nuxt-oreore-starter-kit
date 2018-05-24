@@ -9,3 +9,14 @@ npm-debug.log
 
 # Nuxt generate
 dist
+public
+
+*.log
+
+# Service Worker
+sw.*
+
+# sitemap
+
+sitemap.*
+static/feed.xml

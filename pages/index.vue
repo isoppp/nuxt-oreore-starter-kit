@@ -23,39 +23,39 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+  import AppLogo from '~/components/AppLogo.vue'
 
-export default {
-  components: {
-    AppLogo
+  export default {
+    components: {
+      AppLogo,
+    },
   }
-}
 </script>
 
 <style lang="scss">
 .container {
-  min-height: 100vh;
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  min-height: 100vh;
   text-align: center;
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
   color: #35495e;
+  display: block;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  font-size: 100px;
+  font-weight: 300;
   letter-spacing: 1px;
 }
 
 .subtitle {
-  font-weight: 300;
-  font-size: 42px;
   color: #526488;
-  word-spacing: 5px;
+  font-size: 42px;
+  font-weight: 300;
   padding-bottom: 15px;
+  word-spacing: 5px;
 }
 
 .links {

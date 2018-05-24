@@ -1,12 +1,31 @@
 # nuxt-oreore-starter-kit
 
-> Nuxt.js starter kit
+Nuxt.js starter kit
+
+## Features and Includes
+
+- include @nuxtjs modules
+  - google-tag-manager
+  - pwa
+  - sitemap
+- Sass(.scss) file type support
+  - atomic design folder tree
+- ESLint support
+  - include eslint/standard
+  - include airbnb-base
+  - include plugin:vue/recommended
+  - custom settings
+- stylelint support
+  - include stylelint-order
+  - custom settings
+- pre-commit and lint-staged supported
+- storybook support
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-$ npm install # Or yarn install
+$ yarn
 
 # serve with hot reload at localhost:3000
 $ npm run dev
@@ -19,4 +38,3 @@ $ npm start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).

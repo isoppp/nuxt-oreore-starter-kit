@@ -1,16 +1,16 @@
 <template>
   <section class="container">
-      css page
+    css page
   </section>
 </template>
 
 <script>
 
-export default {
-  components: {
+  export default {
+    components: {
 
+    },
   }
-}
 </script>
 
 <style lang="scss">
