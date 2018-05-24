@@ -1,0 +1,1 @@
+# nuxt-oreore-template
