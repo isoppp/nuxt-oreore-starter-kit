@@ -1,0 +1,22 @@
+// variables
+//--------------------------------------------------------------------------
+$text-align-emmet-keys: (
+  text-align: ta,
+) !default;
+
+$text-align-list: (
+  l:left,
+  c:center,
+  r:right,
+  j:justify,
+) !default;
+
+// set
+//--------------------------------------------------------------------------
+@each $name, $value in $text-align-list {
+  @each $kname, $kvalue in $text-align-emmet-keys {
+    .#{$kvalue}-#{$name} {
+      #{$kname}: #{$value} !important;
+    }
+  }
+}

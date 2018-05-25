@@ -1,0 +1,18 @@
+// variables
+//--------------------------------------------------------------------------
+$border-radius-emmet-key: bdrs !default;
+$border-radius-list: (
+  2: 2px,
+  4: 4px,
+  6: 6px,
+  8: 8px,
+  half: 50%
+) !default;
+
+// set
+//--------------------------------------------------------------------------
+@each $name, $value in $border-radius-list {
+  .#{$border-radius-emmet-key}-#{$name} {
+    border-radius: $value !important;
+  }
+}

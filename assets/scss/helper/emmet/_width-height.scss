@@ -1,0 +1,23 @@
+// variables
+//--------------------------------------------------------------------------
+$some-emmet-keys: (
+  width: w,
+  max-width: maw,
+  height: h,
+  max-height: mah,
+) !default;
+$some-list: (
+  a: auto,
+  n: none,
+  100: 100%,
+) !default;
+
+// set
+//--------------------------------------------------------------------------
+@each $name, $value in $some-list {
+  @each $kname, $kvalue in $some-emmet-keys {
+    .#{$kvalue}-#{$name} {
+      #{$kname}: #{$value} !important;
+    }
+  }
+}

@@ -19,7 +19,9 @@
     "format:js": "eslint --fix --ext .js,.vue .",
     "format:vuecss": "stylelint --fix \"**/*.vue\"",
     "format:scss": "stylelint --syntax scss --fix \"**/*.scss\"",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm-run-all -s lint*",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:css": "stylelint --syntax scss \"**/*.scss\"",
     "precommit": "lint-staged"
   },
   "lint-staged": {
@@ -43,6 +45,7 @@
     "@nuxtjs/sitemap": "^0.1.1",
     "node-sass": "^4.9.0",
     "nuxt": "^1.0.0",
+    "nuxt-sass-resources-loader": "^2.0.0",
     "sass-loader": "^7.0.1",
     "sass-resources-loader": "^1.3.3"
   },

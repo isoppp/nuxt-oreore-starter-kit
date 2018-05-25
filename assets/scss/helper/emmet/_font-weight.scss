@@ -1,0 +1,22 @@
+// variables
+//--------------------------------------------------------------------------
+$font-weight-emmet-keys: (
+  font-weight: fw,
+) !default;
+
+$font-weight-list: (
+  n: normal,
+  b: bold,
+  // br: bolder,
+  // lr: lighter,
+) !default;
+
+// set
+//--------------------------------------------------------------------------
+@each $name, $value in $font-weight-list {
+  @each $kname, $kvalue in $font-weight-emmet-keys {
+    .#{$kvalue}-#{$name} {
+      #{$kname}: #{$value} !important;
+    }
+  }
+}

@@ -28,3 +28,17 @@ a:visited {
 img {
   max-width: 100%;
 }
+
+.container {
+  max-width: map-get($media-sizes, lg) + 32px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.container-fluid {
+    max-width: map-get($media-sizes, lg);
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+}

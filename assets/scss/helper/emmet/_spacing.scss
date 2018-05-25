@@ -1,0 +1,43 @@
+// variables
+//--------------------------------------------------------------------------
+$spacing-emmet-keys: (
+  margin: m,
+  margin-top: mt,
+  margin-right: mr,
+  margin-left: ml,
+  margin-bottom: mb,
+  padding: p,
+  padding-top: pt,
+  padding-right: pr,
+  padding-left: pl,
+  padding-bottom: pb,
+) !default;
+
+$spacing-list: (
+  0: 0,
+  4: 4px,
+  8: 8px,
+  12: 12px,
+  16: 16px,
+  20: 20px,
+  24: 24px,
+  28: 28px,
+  32: 32px,
+  36: 36px,
+  40: 40px,
+  48: 48px,
+  56: 56px,
+  64: 64px,
+  72: 72px,
+  80: 80px,
+) !default;
+
+// set
+//--------------------------------------------------------------------------
+@each $name, $value in $spacing-list {
+  @each $kname, $kvalue in $spacing-emmet-keys {
+    .#{$kvalue}-#{$name} {
+      #{$kname}: #{$value} !important;
+    }
+  }
+}

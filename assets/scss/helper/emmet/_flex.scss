@@ -1,0 +1,29 @@
+// TODO difficult design flex... and i think use grid system instead
+// variables
+//--------------------------------------------------------------------------
+//$some-emmet-keys: (
+//  flex: fx,
+//  flex-basis: fxb,
+//  flex-direction: fxd,
+//  flex-flow: fxf,
+//  flex-grow: fxg,
+//  flex-shrink: fxsh,
+//  flex-wrap:fxw,
+//  justify-content: jc,
+//  max-resolution: mar, // max-resolution: res
+//  min-resolution: mir, // min-resolution: res
+//) !default;
+//
+//$some-list: (
+//
+//) !default;
+
+// set
+//--------------------------------------------------------------------------
+//@each $name, $value in $some-list {
+//  @each $kname, $kvalue in $some-emmet-keys {
+//    .#{$kvalue}-#{$name} {
+//      #{$kname}: #{$value} !important;
+//    }
+//  }
+//}

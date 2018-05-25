@@ -1,0 +1,41 @@
+// variables
+//--------------------------------------------------------------------------
+$position-emmet-keys: (
+  position: pos,
+) !default;
+$position-list: (
+  s: static,
+  a: absolute,
+  r: relative,
+  f: fixed,
+) !default;
+
+// set
+//--------------------------------------------------------------------------
+@each $name, $value in $position-list {
+  @each $kname, $kvalue in $position-emmet-keys {
+    .#{$kvalue}-#{$name} {
+      #{$kname}: #{$value} !important;
+    }
+  }
+}
+
+// additional
+.pos-a-c {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50% -50%);
+}
+
+.pos-a-cv {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pos-a-ch {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}

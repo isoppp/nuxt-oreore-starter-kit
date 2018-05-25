@@ -1,0 +1,23 @@
+// form pavillon variables
+// https://github.com/getpavilion/pavilion/blob/master/scss/pavilion-parts/_variables.scss
+//--------------------------------------------------------------------------
+$phone-landscape-size: 540px !default;         // Minimum screenwidth for phone landscape
+$tablet-portrait-size: 768px !default;         // Minimum screenwidth for tablet portrait
+$tablet-landscape-size: 991px !default;        // Minimum screenwidth for tablet landscape
+$desktop-size: 1200px !default;
+
+
+// glidlex overwrite
+$gl-mq-list: (
+  lg: $desktop-size,
+  md: $tablet-landscape-size,
+  sm: $tablet-portrait-size,
+  xs: $phone-landscape-size,
+) !default;
+
+$gl-gutter:    16px !default; // Total left + right
+$gl-gutter-vertical:    8px !default;
+
+@import "gridlex/gridlex";
+
+//--------------------------------------------------------------------------

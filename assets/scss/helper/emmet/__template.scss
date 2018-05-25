@@ -1,0 +1,18 @@
+// variables
+//--------------------------------------------------------------------------
+$some-emmet-keys: (
+  some: d,
+) !default;
+$some-list: (
+  b: block,
+) !default;
+
+// set
+//--------------------------------------------------------------------------
+@each $name, $value in $some-list {
+  @each $kname, $kvalue in $some-emmet-keys {
+    .#{$kvalue}-#{$name} {
+      #{$kname}: #{$value} !important;
+    }
+  }
+}
