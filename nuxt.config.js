@@ -31,7 +31,7 @@ module.exports = {
   modules: [
     ['@nuxtjs/pwa'],
     ['@nuxtjs/sitemap'],
-    ['nuxt-sass-resources-loader', ['assets/scss/variables/__import.scss', 'assets/scss/mixins/__import.scss']],
+    ['nuxt-sass-resources-loader', ['assets/scss/variables/_variables.scss', 'assets/scss/mixins/_mixins.scss']],
     // ['@nuxtjs/google-tag-manager', { id: 'GTM-XXXXXX' }],
   ],
   manifest: {
