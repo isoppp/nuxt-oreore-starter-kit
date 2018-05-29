@@ -11,9 +11,10 @@
     "ios >= 9"
   ],
   "scripts": {
-    "dev": "nuxt",
+    "dev": "npm-run-all -p storybook nuxt:dev",
     "build": "nuxt build",
     "start": "nuxt start",
+    "nuxt:dev": "nuxt",
     "generate": "nuxt generate",
     "format": "npm-run-all -s format:*",
     "format:js": "eslint --fix --ext .js,.vue .",
@@ -22,7 +23,8 @@
     "lint": "npm-run-all -s lint*",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:css": "stylelint --syntax scss \"**/*.scss\"",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "lint-staged": {
     "*.js": [
@@ -45,20 +47,22 @@
     "@nuxtjs/sitemap": "^0.1.1",
     "node-sass": "^4.9.0",
     "nuxt": "^1.0.0",
-    "nuxt-sass-resources-loader": "^2.0.0",
+    "nuxt-sass-resources-loader": "^2.0.1",
     "sass-loader": "^7.0.1",
     "sass-resources-loader": "^1.3.3"
   },
   "devDependencies": {
+    "@storybook/addon-storysource": "^3.4.6",
+    "@storybook/vue": "^3.4.6",
     "babel-eslint": "^8.2.1",
     "eslint": "^4.15.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-standard": "^11.0.0",
-    "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^1.7.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
     "eslint-plugin-vue": "^4.5.0",
     "husky": "^0.14.3",

@@ -61,15 +61,17 @@
         <div>template</div>
       </div>
     </div>
+
+    <base-button :text="'component'"></base-button>
   </section>
 </template>
 
 <script>
-  import AppLogo from '~/components/AppLogo.vue'
+  import BaseButton from '~/components/atoms/BaseButton.vue'
 
   export default {
     components: {
-      AppLogo,
+      BaseButton,
     },
   }
 </script>
