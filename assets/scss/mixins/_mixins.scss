@@ -1,0 +1,68 @@
+// reset form
+//--------------------------------------------------------------------------
+@mixin reset-form {
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+// Make the breakpoints from gridlex. after customize
+// Make the breakpoints
+// must using same name by gridlex
+// types: lg/md/sm/xs/
+//--------------------------------------------------------------------------
+@mixin media($breakpoint: xs) {
+  @media screen and (max-width: map-get($media-sizes, $breakpoint)) {
+    @content;
+  }
+}
+
+// clearfix
+//--------------------------------------------------------------------------
+@mixin clearfix() {
+  &:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+// set line-height convert px to no px.
+//--------------------------------------------------------------------------
+
+/* stylelint-disable */
+@mixin font-size($size: 12) {
+  font-size: #{$size}px;
+  font-size: #{$size / 10}rem;
+}
+
+/* stylelint-enable*/
+
+@mixin calcLineHeight($fontSize, $lineHeight) {
+  line-height: ceil($lineHeight / $fontSize * 1000) / 1000;
+}
+
+@mixin setFontSizeAndLineHeight($fontSize, $lineHeight) {
+  @include font-size($fontSize);
+
+  line-height: ceil($lineHeight / $fontSize * 1000) / 1000;
+}
+
+// Tracking to Letter-Spacing mixin
+@mixin tracking( $tracking ) {
+  letter-spacing: ( $tracking / 1000 ) * 1em;
+}
+
+// recommend define basic hover style and use it.
+@mixin basicHover() {
+  color: inherit;
+  text-decoration: none;
+  transition: all .2s;
+
+  &:hover {
+    opacity: .8;
+  }
+}

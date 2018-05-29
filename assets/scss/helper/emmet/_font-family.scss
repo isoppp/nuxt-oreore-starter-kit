@@ -1,0 +1,25 @@
+// variables
+//--------------------------------------------------------------------------
+$font-family-base: sans-serif !default;
+$font-family-title: sans-serif !default;
+$font-family-monospace: monospace !default;
+
+$font-family-emmet-keys: (
+  font-family: ff,
+) !default;
+
+$font-family-list: (
+  base: $font-family-base,
+  title: $font-family-title,
+  mono: $font-family-monospace,
+) !default;
+
+// set
+//--------------------------------------------------------------------------
+@each $name, $value in $font-family-list {
+  @each $kname, $kvalue in $font-family-emmet-keys {
+    .#{$kvalue}-#{$name} {
+      #{$kname}: #{$value} !important;
+    }
+  }
+}

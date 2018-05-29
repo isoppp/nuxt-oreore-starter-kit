@@ -1,0 +1,40 @@
+// variables
+//--------------------------------------------------------------------------
+$display-emmet-keys: (
+  display: d,
+) !default;
+$display-list: (
+  b: block,
+  n: none,
+  //if: inline-flex,
+  //i: inline,
+  ib: inline-block,
+  //li: list-item,
+  //ri: run-in,
+  //cp: compact,
+  tb: table,
+  //itb: inline-table,
+  //tbcp : table-caption,
+  //tbcl : table-column,
+  //tbclg : table-column-group,
+  //tbhg : table-header-group,
+  //tbfg:table-footer-group,
+  //tbr:table-row,
+  //tbrg:table-row-group,
+  tbc:table-cell,
+  //rb:ruby,
+  //rbb:ruby-base,
+  //rbbg:ruby-base-group,
+  //rbt:ruby-text,
+  //rbtg:ruby-text-group,
+) !default;
+
+// set
+//--------------------------------------------------------------------------
+@each $name, $value in $display-list {
+  @each $kname, $kvalue in $display-emmet-keys {
+    .#{$kvalue}-#{$name} {
+      #{$kname}: #{$value} !important;
+    }
+  }
+}

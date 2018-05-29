@@ -1,0 +1,20 @@
+// variables
+//--------------------------------------------------------------------------
+$float-emmet-keys: (
+  float: fl,
+) !default;
+$float-list: (
+  l: left,
+  r: right,
+  n: none,
+) !default;
+
+// set
+//--------------------------------------------------------------------------
+@each $name, $value in $float-list {
+  @each $kname, $kvalue in $float-emmet-keys {
+    .#{$kvalue}-#{$name} {
+      #{$kname}: #{$value} !important;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+// variables
+//--------------------------------------------------------------------------
+$border-emmet-keys: (
+  border: bd,
+  // border-top: bdt,
+  // border-right: bdr,
+  // border-left: bdl,
+  // border-bottom: bdb,
+) !default;
+$border-default-color: #aaa !default;
+$border-list: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+) !default;
+
+// set
+//--------------------------------------------------------------------------
+@each $name, $value in $border-list {
+  @each $kname, $kvalue in $border-emmet-keys {
+    .#{$kvalue}-#{$name} {
+      #{$kname}: #{$value} solid $border-default-color !important;
+    }
+  }
+}

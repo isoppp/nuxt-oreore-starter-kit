@@ -1,0 +1,6 @@
+dist/
+static/
+material/
+.storybook/
+sw.js
+nuxt.config.js

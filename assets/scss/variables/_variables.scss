@@ -1,0 +1,56 @@
+// screensize form pavillon variables
+// https://github.com/getpavilion/pavilion/blob/master/scss/pavilion-parts/_variables.scss
+//--------------------------------------------------------------------------
+$phone-landscape-size: 540px !default; // Minimum screenwidth for phone landscape
+$tablet-portrait-size: 768px !default; // Minimum screenwidth for tablet portrait
+$tablet-landscape-size: 991px !default; // Minimum screenwidth for tablet landscape
+$desktop-size: 1200px !default;
+
+$media-sizes: (
+  lg: $desktop-size,
+  md: $tablet-landscape-size,
+  sm: $tablet-portrait-size,
+  xs: $phone-landscape-size,
+) !default;
+
+// color
+// inspired bootstrap and bulma(little) and custom
+// https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+//--------------------------------------------------------------------------
+
+$color-grey-base: #333 !default;
+$color-black: #000 !default;
+$color-white: #fff !default;
+
+$color-grey-1: #111 !default;
+$color-grey-2: #333 !default;
+$color-grey-3: #555 !default;
+$color-grey-4: #777 !default;
+$color-grey-5: #999 !default;
+$color-grey-6: #bbb !default;
+$color-grey-7: #ddd !default;
+$color-grey-8: #f5f5f5 !default;
+
+$color-primary: #00aba9 !default;
+$color-primary-dark: darken($color-primary, 20) !default;
+$color-primary-light: lighten($color-primary, 20) !default;
+$color-secondary: #0f0 !default;
+$color-secondary-dark: darken($color-secondary, 20) !default;
+$color-secondary-light: lighten($color-secondary, 20) !default;
+$color-success: #3fb618 !default;
+$color-info: #1faeff !default;
+$color-warning: #f4db00 !default;
+$color-danger: #ff2e12 !default;
+
+// font
+//--------------------------------------------------------------------------
+
+$font-family-base: sans-serif;
+$font-family-title: sans-serif;
+$font-family-monospace: monospace;
+
+// base
+//--------------------------------------------------------------------------
+
+$color-text-base: $color-grey-base;
+$color-text-link: $color-primary;
