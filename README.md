@@ -2,52 +2,64 @@
 
 Nuxt.js starter kit
 
-## Features and Includes
+## Environment
+
+- __If you don't think need something, probably it deleting is good choice__
 
 ### Include @nuxtjs modules
 
 - google-tag-manager
+  - Please setup `module` property in `nuxt.config.js`.
 - pwa
+  - Please setup `manifest` property in `nuxt.config.js`.
 - sitemap
+  - Please setup `sitemap` property in `nuxt.config.js`.
 
 ### Sass(.scss) file type support
 
 - atomic design folder tree
+  - But I don't think it's best. But prepared only folders.
 - Eric Meyer’s CSS Reset
+  - I like.
 - prepared emmet like helpers
+  - I created this. And, it's my first attempt.
 - using gridlex grid system
+  - I like. (But use first time)
 - color design inspired bootstrap/bulma
-- include some utility classes and mixins
-
+  - Good
+- Include some utility classes and mixins
+  - But I think probably current utilities is not enough
+  
 ### ESLint support
 
-- include eslint/standard
-- include airbnb-base
-- include plugin:vue/recommended
-- custom settings
+- Include eslint/standard
+- Include airbnb-base
+- Include plugin:vue/recommended
+- And custom
 
 ### stylelint support
 
-- include stylelint-order
-- custom settings
+- Include stylelint-order
+- And custom
 
 ### pre-commit and lint-staged supported
 
+- It forces the lint before committing
+
 ### storybook support
 
-## Build Setup
+## Commands
 
-``` bash
-# install dependencies
-$ yarn
+- Install dependencies
+  - `yarn`
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+- Serve with hot reload at localhost:3000 and run storybook localhost:9001
+  - `npm run dev`
 
-# build for production and launch server
-$ npm run build
-$ npm start
+- Build for production and launch server
+  - `npm run build`
+  - `npm start`
 
-# generate static project
-$ npm run generate
-```
+- Generate static project
+  - `npm run generate`
+
