@@ -1,6 +1,5 @@
-version: 2
 dependencies:
-- type: js
+- type: js-npm
   path: /
   settings:
     github_labels:
