@@ -1,9 +1,16 @@
-dependencies:
-- type: js-npm
+collectors:
+
+- type: js
   path: /
-  settings:
-    github_labels:
-    - dependencies:update
-    github_assignees:
-    - isoppp
-    batch_mode: true
+  actors:
+  # pull requests for all major, minor, and patch updates
+  - type: js-npm
+    versions: "Y.Y.Y"
+    settings:
+      github_labels:
+      - dependencies
+      github_assignees:
+      - isoppp
+      batch_mode: true
+
+
