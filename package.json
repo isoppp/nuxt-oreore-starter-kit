@@ -45,7 +45,7 @@
     "@nuxtjs/google-tag-manager": "^2.0.0",
     "@nuxtjs/pwa": "^2.0.8",
     "@nuxtjs/sitemap": "^0.1.1",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.9.2",
     "nuxt": "^1.4.1",
     "nuxt-sass-resources-loader": "^2.0.2",
     "sass-loader": "^7.0.3",
