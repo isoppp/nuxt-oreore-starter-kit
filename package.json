@@ -54,7 +54,7 @@
   "devDependencies": {
     "@storybook/addon-storysource": "^3.4.8",
     "@storybook/vue": "^3.4.8",
-    "babel-eslint": "^8.2.5",
+    "babel-eslint": "^8.2.6",
     "eslint": "^5.0.1",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-config-standard": "^11.0.0",
