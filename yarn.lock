@@ -6149,11 +6149,19 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nuxt-sass-resources-loader@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/nuxt-sass-resources-loader/-/nuxt-sass-resources-loader-2.0.2.tgz#ee01292f0b1f9952aef75c9e7e4649cc133c184e"
+nuxt-multianalytics@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/nuxt-multianalytics/-/nuxt-multianalytics-0.1.0.tgz#0c694d5326f0a5e07ce1aefc38ba09eddea47fe0"
   dependencies:
+    vue-multianalytics "^1.9.6"
+
+nuxt-sass-resources-loader@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/nuxt-sass-resources-loader/-/nuxt-sass-resources-loader-2.0.3.tgz#74743f5a9605cdd6c4634f124cc607a9f7a7e10b"
+  dependencies:
+    nuxt-multianalytics "^0.1.0"
     sass-resources-loader "^1.3.1"
+    vue-multianalytics "^1.9.6"
 
 nuxt@^1.4.1:
   version "1.4.1"
@@ -9485,6 +9493,10 @@ vue-meta@^1.4.3:
     deepmerge "^2.0.0"
     lodash.isplainobject "^4.0.6"
     object-assign "^4.1.1"
+
+vue-multianalytics@^1.9.6:
+  version "1.9.6"
+  resolved "https://registry.yarnpkg.com/vue-multianalytics/-/vue-multianalytics-1.9.6.tgz#07c778b681e41f88d157004589b09ee9433037d2"
 
 vue-router@^3.0.1:
   version "3.0.1"
