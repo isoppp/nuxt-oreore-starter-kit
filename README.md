@@ -1,5 +1,7 @@
 # nuxt-oreore-starter-kit
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/isoppp/nuxt-oreore-starter-kit.svg)](https://greenkeeper.io/)
+
 Nuxt.js starter kit
 
 ## Environment
